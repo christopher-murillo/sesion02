@@ -91,10 +91,26 @@ public class Programa2 {
 	
 //	    Ordenamiento de Nombres
 //		lista.sort(( o1, o2) -> o1.getNombres().compareTo(o2.getNombres()));
+	
+		
+		lista.sort((Empleado o1, Empleado o2) ->
+		{
+			if (o1.getSueldo() < o2.getSueldo()) {
+				return 1;
+				
+			} else if (o1.getSueldo() > o2.getSueldo()) {
+				return -1;
+				
+			}else {
+				return 0;
+			}
+		});
 		
 	
 
-	
+	for (Empleado empleado : lista) {
+		System.out.println(empleado);
+	}
 
 		
 	
