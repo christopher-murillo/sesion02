@@ -1,0 +1,15 @@
+package com.mitocode.ejercicio5.interfaces.funcionales;
+
+public class Programa {
+
+	public static void main(String[] args) {
+			
+		IOperacion op = (x, y) -> x + y;
+		System.out.println("Suma: " + op.suma(5, 3));
+		
+		System.out.println("PI: " + op.valorPI());
+		op.metodoDefectoconParametros("Suma");
+		System.out.println("Resta: " + op.resta(5, 3));
+	}
+
+}
